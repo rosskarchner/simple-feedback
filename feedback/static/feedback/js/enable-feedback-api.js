@@ -7,7 +7,6 @@ $(function(){
         formdata = form.serializeArray();
         $.ajax({url:destination,
                 type:'POST', data: formdata, success: function(result){
-            console.log(result);
     }});  
     return false;
     
