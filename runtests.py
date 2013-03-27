@@ -19,7 +19,8 @@ if not settings.configured:
         SITE_ID=1,
         SECRET_KEY='this-is-just-for-tests-so-not-that-secret',
         TEST_RUNNER = 'django_nose.NoseTestSuiteRunner',
-        NOSE_ARGS = ['--with-coverage','--cover-package=feedback']
+        ROOT_URLCONF = 'feedback.urls',
+        NOSE_ARGS = ['-s', '--with-coverage','--cover-package=feedback']
     )
 
 
