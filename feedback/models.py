@@ -2,7 +2,7 @@ from django.db import models
 
 class Campaign(models.Model):
     """
-    A campaign is a named bucked for feedback-- it's just a name and a slug.
+    A campaign is a named bucket for feedback-- it's just a name and a slug.
     """
     name = models.CharField(max_length=255)
     slug = models.SlugField(primary_key=True)
