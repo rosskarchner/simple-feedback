@@ -2,7 +2,7 @@ import json
 
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
-from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.csrf import csrf_exempt, get_token
 
 from .forms import FeedbackForm
 from .models import Campaign

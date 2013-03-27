@@ -13,14 +13,13 @@ def read_file(filename):
 
 
 setup(
-    name='django-feedback',
+    name='django-simple-feedback',
     version=__import__('feedback').__version__,
-    author='<Include Your Name Here>',
-    author_email='<Include Your Email Here>',
+    author='Ross Karchner',
+    author_email='ross.karchner@cfpb.gov',
     packages=find_packages(),
     include_package_data=True,
-    url='<Include Link to Project>',
-    license='<Include License Name>',
+    license='Public domain',
     description=u' '.join(__import__('feedback').__doc__.splitlines()).strip(),
     classifiers=[
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
