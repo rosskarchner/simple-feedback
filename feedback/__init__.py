@@ -1,3 +1,3 @@
-"<Include a description of your project>"
+"A simple feedback collector for Django"
 
-__version__ = '0.0.0'
+__version__ = '0.0.1'

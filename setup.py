@@ -13,7 +13,7 @@ def read_file(filename):
 
 
 setup(
-    name='django-simple-feedback',
+    name='django-simple-feedback-collector',
     version=__import__('feedback').__version__,
     author='Ross Karchner',
     author_email='ross.karchner@cfpb.gov',
