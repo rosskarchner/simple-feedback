@@ -1,4 +1,4 @@
-apply_feedback_api= function(handler_root){
+apply_feedback_api= function(handler_root, callback){
 $(function(){
     $('form[data-feedback-campaign]').submit(function(){
         form = $(this);
@@ -7,6 +7,7 @@ $(function(){
         formdata = form.serializeArray();
         $.ajax({url:destination,
                 type:'POST', data: formdata, success: function(result){
+                    callback(form);
     }});  
     return false;
     

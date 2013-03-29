@@ -7,7 +7,9 @@
 <script src="/static/feedback/js/enable-feedback-api.js"></script>
 
 <script>
-apply_feedback_api('/feedback/');
+    apply_feedback_api('/feedback/', function(form){
+        alert('thank you!');    
+    });
 </script>
 </head>
 
